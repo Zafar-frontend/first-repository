@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson6</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+</head>
+<body>
+
+<div class="calc">
+<h2>Калькулятор площади прямоугольника</h2>
+<label for="">
+a=
+<input type="Number" name="a">
+</label>
+<label for="">
+b=
+<input type="Number" name="b">
+</label>
+<button onclick="multiply()">Посчитать</button>
+
+<div id="Result">
+</div>
+</div>
+
+<div class="courseSale">
+<h2>Калькулятор стоимости обучения</h2>
+<label for="">
+Курс:
+<select name="" id="courseName" oninput="courseSale()">
+<option value="none">Выбирите курс</option>
+<option value="py">Python</option>
+<option value="fr">Frontend</option>
+<option value="ux">UX_UI</option>
+</select>
+</label>
+<label id="percent" for="">
+Скидка:
+<input type="range" min="0" max="50" step="5" value="0" oninput="courseSale()" id="discountRange">
+<span id="discountValue">0%</span>
+</label>
+<label for="">
+Сумма:
+<input type="text" id="sale" readonly>
+</label>
+</div>
+
+<div class="registration">
+<h2>Оставить заявку</h2>
+<label for=""> 
+Имя: 
+<input type="text" name="name" placeholder="Введите имя">
+</label> 
+
+<label for=""> 
+Страна: 
+<select name="country" id="country"> 
+<option value="Выбрать страну">Выбрать страну</option>
+<option value="uz">Узбекистан</option> 
+<option value="ru">Россия</option> 
+<option value="tj">Таджикистан</option> 
+</select>
+
+<label for=""> 
+Телефон: 
+<input type="tel" id="phone" placeholder="Введите номер телефона"> 
+</label> 
+
+<label for=""> 
+<input id="check" type="checkbox" name="checkbox">
+Подтвердите обработку данных  
+</label> 
+<button id="btn" disabled>Отправить</button>
+<script src="./main.js"></script>
+</div>
+</body>
+</html>
